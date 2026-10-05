@@ -7,7 +7,105 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
 <body>
+
+    <div class="menu">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <section class="rooms">
+
+        <!-- TÍTULO -->
+        <h1 class="rooms-title">Rooms</h1>
+
+
+        <!-- FILTROS -->
+        <div class="rooms-filter">
+
+            <p class="filter-label">Category</p>
+
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="carteleria">Cartelería</button>
+                <button class="filter-btn" data-filter="fotografia">Photography</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="editorial">Editorial Composition</button>
+            </div>
+
+        </div>
+
+
+        <!-- PROYECTOS -->
+        <div class="projects-grid">
+
+            <!-- CARTELERÍA -->
+            <a href="cinema-church.html"
+            class="project"
+            data-category="carteleria">
+
+                <img src="gallery/carteleria 1.jpeg" alt="">
+                <div class="project-info">
+                    <p>Young Bel Ami Fest</p>
+                    <span>Photography</span>
+                </div>
+
+            </a>
+
+
+            <!-- FOTOGRAFÍA -->
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografia 1.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
+                    <span>Photography</span>
+                </div>
+
+            </a>
+
+
+            <!-- BRANDING -->
+            <a href="moco.html"
+            class="project"
+            data-category="branding">
+
+                <img src="gallery/moco.jpg" alt="">
+                <div class="project-info">
+                    <p>Moco Museum</p>
+                    <span>Branding</span>
+                </div>
+
+            </a>
+
+
+            <!-- EDITORIAL -->
+            <a href="metropolis.html"
+            class="project"
+            data-category="editorial">
+
+                <img src="gallery/collage 1.jpeg" alt="">
+                <div class="project-info">
+                    <p>What does our brain believe in?</p>
+                    <span>Editorial Composition</span>
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
     
 </body>
 </html>

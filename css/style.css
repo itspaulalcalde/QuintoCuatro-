@@ -517,7 +517,7 @@
 
 
 
-/* Galeria About */
+/* About - Gallery */
 
 .about-gallery {
     position: relative;
@@ -568,6 +568,93 @@
     width: 45%;
     top: 1100px;
     left: 5%;
+}
+
+
+
+/* About - Skills */
+
+.skills {
+    width: 100%;
+
+    padding: 120px 70px 180px;
+
+    background-color: white;
+
+    font-family: inherit;
+}
+
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 100px;
+}
+
+.skills-header h2 {
+    margin: 0;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-size: clamp(80px, 12vw, 190px);
+    font-weight: 500;
+
+    line-height: 0.8;
+    letter-spacing: -8px;
+}
+
+.skills-header p {
+    margin: 0;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+
+    text-align: right;
+}
+
+.skills-list {
+    width: 100%;
+
+    border-top: 1px solid black;
+}
+
+.skill-row {
+    display: grid;
+
+    grid-template-columns: 80px 1.5fr 1fr;
+
+    align-items: start;
+
+    padding: 22px 0 45px;
+
+    border-bottom: 1px solid black;
+}
+
+.skill-number {
+    font-size: 11px;
+}
+
+.skill-row h3 {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    letter-spacing: -1px;
+}
+
+.skill-row p {
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.5;
+    letter-spacing: 0.2px;
 }
 
 
@@ -659,3 +746,6 @@
 .footer-year {
     text-align: right;
 }
+
+
+

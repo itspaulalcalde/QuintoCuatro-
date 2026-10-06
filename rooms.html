@@ -61,6 +61,54 @@
 
             </a>
 
+            <a href="cinema-church.html"
+            class="project"
+            data-category="carteleria">
+
+                <img src="gallery/cartelería 2.jpeg" alt="">
+                <div class="project-info">
+                    <p>Young Bel Ami Fest</p>
+                    <span>Photography</span>
+                </div>
+
+            </a>
+
+            <a href="cinema-church.html"
+            class="project"
+            data-category="carteleria">
+
+                <img src="gallery/cartelería 3.jpeg" alt="">
+                <div class="project-info">
+                    <p>Young Bel Ami Fest</p>
+                    <span>Photography</span>
+                </div>
+
+            </a>
+
+            <a href="cinema-church.html"
+            class="project"
+            data-category="carteleria">
+
+                <img src="gallery/cartelería 4.jpeg" alt="">
+                <div class="project-info">
+                    <p>Young Bel Ami Fest</p>
+                    <span>Photography</span>
+                </div>
+
+            </a>
+
+            <a href="cinema-church.html"
+            class="project"
+            data-category="carteleria">
+
+                <img src="gallery/cartelería 5.jpeg" alt="">
+                <div class="project-info">
+                    <p>Young Bel Ami Fest</p>
+                    <span>Photography</span>
+                </div>
+
+            </a>
+
 
             <!-- FOTOGRAFÍA -->
             <a href="claudio.html"
@@ -70,7 +118,72 @@
                 <img src="gallery/fotografia 1.jpeg" alt="">
                 <div class="project-info">
                     <p>Heat Wave in Paris</p>
-                    <span>Photography</span>
+                </div>
+
+            </a>
+
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografía 3.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
+                </div>
+
+            </a>
+
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografía 2.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
+                </div>
+
+            </a>
+
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografía 4.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
+                </div>
+
+            </a>
+
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografía 5.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
+                </div>
+
+            </a>
+
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografía 6.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
+                </div>
+
+            </a>
+
+            <a href="claudio.html"
+            class="project"
+            data-category="fotografia">
+
+                <img src="gallery/fotografía 7.jpeg" alt="">
+                <div class="project-info">
+                    <p>Heat Wave in Paris</p>
                 </div>
 
             </a>
@@ -96,6 +209,18 @@
             data-category="editorial">
 
                 <img src="gallery/collage 1.jpeg" alt="">
+                <div class="project-info">
+                    <p>What does our brain believe in?</p>
+                    <span>Editorial Composition</span>
+                </div>
+
+            </a>
+
+            <a href="metropolis.html"
+            class="project"
+            data-category="editorial">
+
+                <img src="gallery/collage 2.jpeg"">
                 <div class="project-info">
                     <p>What does our brain believe in?</p>
                     <span>Editorial Composition</span>
@@ -148,6 +273,42 @@
         </div>
 
     </footer>
+
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projects = document.querySelectorAll(".project");
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const category = button.dataset.filter;
+
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                projects.forEach(project => {
+
+                    if (
+                        category === "all" ||
+                        project.dataset.category === category
+                    ) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+
     
 </body>
 </html>

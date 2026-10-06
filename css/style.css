@@ -1,5 +1,20 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 /* MENU */
+
 
 .menu {
     width: 100%;
@@ -94,6 +109,7 @@
 }
 
 .home-hero-bottom {
+    width: 100%;
     display: grid;
 
     grid-template-columns: 1fr 1.7fr 1fr;
@@ -140,7 +156,10 @@
 
 
 .home-location {
-    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -464,7 +483,7 @@
 
     color: #000000;
     background-color: #ffffff;
-    font-family: inherit;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
@@ -565,7 +584,7 @@
 }
 
 .photo-5 {
-    width: 45%;
+    width: 28%;
     top: 1100px;
     left: 5%;
 }
